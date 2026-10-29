@@ -14,3 +14,7 @@ Primary Codex thread ID: `01a184eb-4651-77f0-ae8f-d23ce627d44e`
 4. The browser check separately exercised an explicit IRC protocol fixture and a real public Twitch channel. Duplicate fixture messages produced one authored remix; the native sample received real ordinary chat. No fixture is presented as external participation.
 
 The frontend, engine, maps and original SVG robot art were built in this thread with a parallel Codex engine task. Source files and the observable build results are public. Private account data, unrelated conversations and model-usage records remain outside this repository.
+
+## Recorded demonstration
+
+The [two-minute video](https://youtu.be/wE18t2fZllU) includes an exact excerpt of the original 08:20:49 Codex patch and its browser-check result. The [watch page](https://blucca.github.io/forkline/demo/) includes English captions and the complete narration transcript. Native Twitch reception, local remixes and fictional example credits are labelled separately.

@@ -4,7 +4,7 @@
 
 A tiny remix studio for Twitch. A viewer changes one robot instruction; the original and its remix replay on the same map, from the same start, on the same clock. The first changed beat lights up, and every version keeps its parent and author.
 
-[Play Forkline](https://blucca.github.io/forkline/) · [Watch the two-minute demo](https://blucca.github.io/forkline/demo/) · [Open a live round](https://blucca.github.io/forkline/?channel=twitchdev)
+[Play Forkline](https://blucca.github.io/forkline/) · [Watch the two-minute demo](https://blucca.github.io/forkline/demo/) ([YouTube](https://youtu.be/wE18t2fZllU)) · [Open a live round](https://blucca.github.io/forkline/?channel=twitchdev)
 
 ## Try it
 
