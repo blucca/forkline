@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#eeeafa">
+  <meta name="description" content="Chat changes one robot instruction. Two futures replay together. A tiny remix studio for Twitch.">
+  <title>Forkline — One change. Two futures.</title>
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="masthead" aria-label="Main">
+    <a class="wordmark" href="./" aria-label="Forkline home">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M7 32V23Q7 19 12 19H17Q23 19 23 13V6M17 19Q31 19 31 31" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><circle cx="23" cy="6" r="4" fill="#344cdb"/><circle cx="31" cy="32" r="4" fill="#e47768"/></svg>
+      Forkline
+    </a>
+    <form id="channel-form" class="channel-form">
+      <label for="channel">Twitch channel</label>
+      <div class="channel-entry"><span aria-hidden="true">#</span><input id="channel" name="channel" autocomplete="off" spellcheck="false" placeholder="your_channel" pattern="[a-zA-Z0-9_]{1,25}" aria-describedby="connection"><button id="listen" type="submit">Listen</button></div>
+      <button id="disconnect" type="button" hidden>Disconnect</button>
+    </form>
+  </nav>
+
+  <main>
+    <header class="intro">
+      <div>
+        <h1>One change. Two futures.</h1>
+        <p>Chat remixes a robot’s route. Watch the exact moment it changes.</p>
+      </div>
+      <div class="connection-wrap"><span id="connection" class="connection" role="status">Local example</span><span id="received" class="received"></span></div>
+    </header>
+
+    <div id="level-tabs" class="level-tabs" role="group" aria-label="Choose a challenge"></div>
+
+    <div class="studio">
+      <section class="tabletop" aria-label="Two futures">
+        <div class="scene-heading">
+          <div><h2 id="level-title">One beat late</h2><p id="level-brief"></p></div>
+          <div class="legend"><span class="parent-key">Original</span><span class="child-key">Remix</span></div>
+        </div>
+        <div class="arena-wrap">
+          <svg id="arena" viewBox="0 0 800 380" role="img" aria-label="Robot route comparison"></svg>
+          <div class="beat-box">Beat <strong id="beat">0</strong><span id="gate-hint"></span><span id="split-hint"></span></div>
+        </div>
+        <div class="replay-bar">
+          <button id="replay" class="replay-button" type="button" aria-label="Replay both routes">Replay together</button>
+          <button id="play-pause" class="plain-button" type="button">Pause</button>
+          <input id="scrub" type="range" min="0" max="8" value="0" step="0.01" aria-label="Replay beat">
+          <output id="divergence" for="scrub">Pick one change.</output>
+        </div>
+        <div class="program-comparison">
+          <section class="program-row original-row">
+            <div class="program-caption"><strong id="parent-caption">Original #0</strong><span id="parent-result"></span></div>
+            <div id="parent-program" class="program-strip" aria-label="Original instructions"></div>
+          </section>
+          <section class="program-row remix-row">
+            <div class="program-caption"><strong id="child-caption">Remix</strong><span id="child-result"></span></div>
+            <div id="child-program" class="program-strip" aria-label="Remix instructions"></div>
+          </section>
+        </div>
+        <div class="lineage-bar"><span>Remix trail</span><div id="lineage" class="lineage"></div><button id="share" class="plain-button" type="button">Copy replay link</button></div>
+      </section>
+
+      <aside class="workbench" aria-label="Make a remix">
+        <h2>Make one change.</h2>
+        <p class="bench-intro">Choose a version and a step. Replace just that instruction.</p>
+        <label for="parent-select">Remix from</label>
+        <select id="parent-select"></select>
+        <div class="step-caption">Replace step <strong id="selected-slot">1</strong><span id="selected-instruction">Forward</span></div>
+        <div id="editable-program" class="editable-program" role="group" aria-label="Choose the instruction to replace"></div>
+        <div class="op-buttons" role="group" aria-label="Replace the selected instruction">
+          <button type="button" data-op="F"><b aria-hidden="true">↑</b><span>Forward</span><small>F</small></button>
+          <button type="button" data-op="L"><b aria-hidden="true">↶</b><span>Turn left</span><small>L</small></button>
+          <button type="button" data-op="R"><b aria-hidden="true">↷</b><span>Turn right</span><small>R</small></button>
+          <button type="button" data-op="W"><b aria-hidden="true">Ⅱ</b><span>Wait a beat</span><small>W</small></button>
+        </div>
+        <p class="local-note">These buttons make a local preview. On Twitch, send the command below.</p>
+        <div class="command-box"><span>Chat command</span><code id="chat-command">!fix 0 1 W</code><button id="copy-command" type="button" aria-label="Copy chat command">Copy</button></div>
+        <p id="message" class="message" aria-live="polite">Try replacing step 1 with Wait. The door runs on a clock.</p>
+        <div class="branch-heading"><h3>Versions</h3><label><input id="auto-show" type="checkbox" checked> Show chat remixes</label></div>
+        <div id="versions" class="versions" aria-label="Available versions"></div>
+        <div class="bench-footer"><button id="reset" type="button" class="plain-button">Local example</button><button id="overlay" type="button" class="plain-button">Copy OBS URL</button><button id="export" type="button" class="plain-button">Save remix JSON</button><button id="import" type="button" class="plain-button">Open remix JSON</button><input id="import-file" type="file" accept=".json,application/json" hidden></div>
+      </aside>
+    </div>
+
+    <section class="how-it-works" aria-label="How to play">
+      <div><h3>A small command.</h3><p><code>!fix 0 1 W</code> remixes version 0, replacing step 1 with a wait. F moves forward; L and R turn; W waits one beat.</p></div>
+      <div><h3>A fair comparison.</h3><p>Both robots start in the same place, on the same clock. Dashed blue is the original. Solid coral is the remix.</p></div>
+      <div><h3>A shared creation.</h3><p>Every version keeps its parent and its author. Continue someone’s fix, then save a replay of the whole trail.</p></div>
+    </section>
+  </main>
+  <footer><span>Built with OpenAI Codex. Original maps & artwork.</span><a href="https://github.com/blucca/forkline" target="_blank" rel="noreferrer">Code & setup</a><span>Reads explicit !fix commands. Chat names appear on the stage.</span></footer>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
