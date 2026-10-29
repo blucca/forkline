@@ -1,0 +1,77 @@
+WEBVTT
+
+00:00:00.400 --> 00:00:04.650
+One instruction turns a crashed robot into a successful delivery.
+
+00:00:04.670 --> 00:00:12.459
+Forkline is a remix studio for Twitch: change one step, replay both futures, and see
+exactly when they split.
+
+00:00:12.479 --> 00:00:18.544
+A viewer starts with the command on screen: exclamation mark fix, zero, one, W.
+
+00:00:20.520 --> 00:00:23.162
+Here is that repair as a local preview.
+
+00:00:23.182 --> 00:00:27.960
+I select original zero, step one, and replace Forward with Wait.
+
+00:00:27.980 --> 00:00:30.548
+Blue and coral run on the same clock.
+
+00:00:30.568 --> 00:00:37.392
+Blue hits the closed gate on beat three; coral arrives on beat four, crosses, and
+delivers on beat seven.
+
+00:00:39.360 --> 00:00:41.901
+The first split lights up at beat one.
+
+00:00:41.921 --> 00:00:48.290
+Scrubbing keeps both runs synchronized, so the audience can trace the result back to
+a single decision.
+
+00:00:48.310 --> 00:00:51.744
+Now I enter a real Twitch channel and press Listen.
+
+00:00:51.764 --> 00:00:56.400
+The live counter shows ordinary messages arriving through Twitch's native
+connection.
+
+00:00:58.360 --> 00:01:02.030
+The remix actions in this recording are local previews.
+
+00:01:02.050 --> 00:01:08.394
+On the third challenge, Rae fixes the turn, then Sol continues Rae's version and
+fixes the timing.
+
+00:01:08.414 --> 00:01:11.307
+Those names are fictional example credits.
+
+00:01:11.327 --> 00:01:15.112
+Both contributions stay visible in the parent-and-author trail.
+
+00:01:17.080 --> 00:01:23.815
+Copy a replay link to reopen that whole trail, or copy the OBS URL for a clean
+stream stage.
+
+00:01:23.835 --> 00:01:26.793
+Viewers use their existing Twitch login.
+
+00:01:26.813 --> 00:01:35.416
+The studio listens as a read-only guest, credits explicit fix commands using Twitch
+identity tags, and counts each message ID once.
+
+00:01:37.400 --> 00:01:44.992
+Codex built the deterministic engine, original maps, SVG studio, and Twitch adapter
+during this hackathon.
+
+00:01:45.012 --> 00:01:53.785
+Here is the actual build thread: a browser check exposed a same-tab replay bug;
+Codex added the hash-change handler and the check passed.
+
+00:01:53.805 --> 00:01:56.384
+The session ID and source are public.
+
+00:01:56.404 --> 00:02:00.224
+Open Forkline, listen to your channel, and make one change.
+
