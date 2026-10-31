@@ -1,0 +1,15 @@
+{
+  "format": "forkline",
+  "version": 1,
+  "levelId": 0,
+  "activeId": 1,
+  "records": [
+    {
+      "id": 1,
+      "parentId": 0,
+      "slot": 1,
+      "op": "W",
+      "name": "Viewer 1"
+    }
+  ]
+}

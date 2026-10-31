@@ -1,0 +1,17 @@
+{
+  "at_utc": "2026-10-31T15:05:13Z",
+  "channel": "antivex_dev",
+  "viewer_display_name": "Viewer 1",
+  "command": "!fix 0 1 W",
+  "source": "Actual native Twitch chat; studio reads as an anonymous guest",
+  "native_user_and_message_tags_present": true,
+  "messages_read": 1,
+  "remixes_created": 1,
+  "first_split_beat": 1,
+  "original_result": "Gate shut at beat 3",
+  "remix_result": "Delivered at beat 7",
+  "studio_chat_writes": 0,
+  "video_provenance": "Native Twitch chat and cropped live app footage, followed by a labelled screenshot of that same run’s recorded end state.",
+  "saved_replay": "live-viewer-replay.json",
+  "privacy": "Viewer 1 is an anonymized public credit. Viewer names are redacted in the video. The saved replay contains program changes and this alias; raw chat and native IDs remain private."
+}

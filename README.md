@@ -4,7 +4,7 @@
 
 A tiny remix studio for Twitch. A viewer changes one robot instruction; the original and its remix replay on the same map, from the same start, on the same clock. The first changed beat lights up, and every version keeps its parent and author.
 
-[Play Forkline](https://blucca.github.io/forkline/) · [Watch the two-minute demo](https://blucca.github.io/forkline/demo/) ([YouTube](https://youtu.be/wE18t2fZllU)) · [Open a live round](https://blucca.github.io/forkline/?channel=twitchdev)
+[Play Forkline](https://blucca.github.io/forkline/) · [Watch the two-minute demo](https://blucca.github.io/forkline/demo/) ([YouTube](https://youtu.be/0absD3jAlgY)) · [Open a live round](https://blucca.github.io/forkline/?channel=twitchdev)
 
 ## Try it
 
@@ -59,8 +59,9 @@ The first release has three short challenges, programs of at most 11 instruction
 
 - A runnable [core check](check-core.mjs) covers three repairs, a two-author chain, IRC identity tags, duplicate messages, invalid changes and a change with no observable effect.
 - [Browser validation](docs/browser-validation.json) covers a local WAIT repair, same-tab saved replay, a 390px layout, a 1280×720 overlay, a protocol fixture, and one native Twitch read-only sample. The fixture and real network observations are labelled separately.
+- [First external viewer trial](docs/live-viewer-test.json): on 31 October, an independent viewer sent `!fix 0 1 W` in `antivex_dev`; Forkline credited remix #1 and delivered at beat 7. The public replay uses the alias **Viewer 1**; the film redacts the viewer name. Download the [saved replay](docs/live-viewer-replay.json), then use **Open remix JSON** in the studio to inspect it as a saved run.
 - [Codex build notes](docs/codex-build.md) identify the primary building thread and one actual implementation repair.
 
-Built with OpenAI Codex during the Codex × TwitchCon Hackathon window. Fictional example credits are explicitly marked. Independent live playtests will be recorded when completed.
+Built with OpenAI Codex during the Codex × TwitchCon Hackathon window. Fictional example credits are explicitly marked. The first independent viewer command and completed delivery are recorded above.
 
 MIT license.

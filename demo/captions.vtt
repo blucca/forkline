@@ -23,55 +23,51 @@ Blue and coral run on the same clock.
 Blue hits the closed gate on beat three; coral arrives on beat four, crosses, and
 delivers on beat seven.
 
-00:00:39.360 --> 00:00:41.901
-The first split lights up at beat one.
+00:00:38.960 --> 00:00:42.531
+This is Twitch's own chat, in Antivex's channel.
 
-00:00:41.921 --> 00:00:48.290
-Scrubbing keeps both runs synchronized, so the audience can trace the result back to
-a single decision.
+00:00:42.551 --> 00:00:51.284
+A logged-in viewer sends exclamation mark fix, zero, one, W. Forkline receives the
+real message and creates a credited remix.
 
-00:00:48.310 --> 00:00:51.744
-Now I enter a real Twitch channel and press Listen.
+00:00:51.304 --> 00:00:54.651
+On the same clock, the original stops at the gate.
 
-00:00:51.764 --> 00:00:56.400
-The live counter shows ordinary messages arriving through Twitch's native
-connection.
+00:00:54.671 --> 00:00:57.920
+The viewer's wait crosses it and delivers at beat seven.
 
-00:00:58.360 --> 00:01:02.030
-The remix actions in this recording are local previews.
-
-00:01:02.050 --> 00:01:08.394
+00:01:05.970 --> 00:01:12.314
 On the third challenge, Rae fixes the turn, then Sol continues Rae's version and
 fixes the timing.
 
-00:01:08.414 --> 00:01:11.307
+00:01:12.334 --> 00:01:15.227
 Those names are fictional example credits.
 
-00:01:11.327 --> 00:01:15.112
+00:01:15.247 --> 00:01:19.032
 Both contributions stay visible in the parent-and-author trail.
 
-00:01:17.080 --> 00:01:23.815
+00:01:21.000 --> 00:01:27.735
 Copy a replay link to reopen that whole trail, or copy the OBS URL for a clean
 stream stage.
 
-00:01:23.835 --> 00:01:26.793
+00:01:27.755 --> 00:01:30.713
 Viewers use their existing Twitch login.
 
-00:01:26.813 --> 00:01:35.416
+00:01:30.733 --> 00:01:39.336
 The studio listens as a read-only guest, credits explicit fix commands using Twitch
 identity tags, and counts each message ID once.
 
-00:01:37.400 --> 00:01:44.992
+00:01:41.320 --> 00:01:48.912
 Codex built the deterministic engine, original maps, SVG studio, and Twitch adapter
 during this hackathon.
 
-00:01:45.012 --> 00:01:53.785
+00:01:48.932 --> 00:01:57.705
 Here is the actual build thread: a browser check exposed a same-tab replay bug;
 Codex added the hash-change handler and the check passed.
 
-00:01:53.805 --> 00:01:56.384
+00:01:57.725 --> 00:02:00.304
 The session ID and source are public.
 
-00:01:56.404 --> 00:02:00.224
+00:02:00.324 --> 00:02:04.144
 Open Forkline, listen to your channel, and make one change.
 
